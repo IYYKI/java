@@ -7,6 +7,12 @@ public class VehicleDemo {
         v = new Bicycle();
         v.run();
         v.stop();
+        v = new Auto();
+        v.run();
+        v.stop();
+        v = new AudiR8();
+        v.run();
+        v.stop();
     }
 
 }
