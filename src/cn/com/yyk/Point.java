@@ -9,7 +9,11 @@ public class Point {
         this.y=y;
         Point o = new Point(0,1);
     }
-    public double area (Point other){
-        return Math.sqrt(x-other.x)*(x-other.x);
+    public double distance (Point other){
+        return Math.sqrt(x-other.x)*(x-other.x)
+                +(y-other.y)*(y-other.y);
+    }
+    public String toString(){
+        return "("+x+","+y+")";
     }
 }

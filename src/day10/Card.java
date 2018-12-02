@@ -38,8 +38,10 @@ public class Card {
         setSuit(suit);
     }
 
-    private static final String[] RANK_NAMES=("3,4,5,6,7,8,9,10,J,Q,K,A,小,王").split(",");
-    private static final String[] SUIT_NAMES={"方块","梅花","红桃","黑桃","大","小"};
+    private static final String[] RANK_NAMES=
+            ("3,4,5,6,7,8,9,10,J,Q,K,A,小,王").split(",");
+    private static final String[] SUIT_NAMES=
+            {"方块","梅花","红桃","黑桃","大","小"};
 
     public String getRankNames(){
         return RANK_NAMES[this.rank];
@@ -60,5 +62,8 @@ public class Card {
     }
     public void setSuit(int suit){
         this.suit = suit;
+    }
+    public String toString(){
+        return getSuitNames()+getRankNames();
     }
 }

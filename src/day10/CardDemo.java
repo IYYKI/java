@@ -1,5 +1,6 @@
 package day10;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class CardDemo {
@@ -26,7 +27,9 @@ public class CardDemo {
     }
     for (i=0;i<cards.length;i++){
         Card c = cards[i];
-        System.out.println(c.getSuitNames()+','+c.getRankNames()+" ");
+        System.out.println(c+" ");
     }
+    System.out.println(Arrays.toString(cards));
+
     }
 }
