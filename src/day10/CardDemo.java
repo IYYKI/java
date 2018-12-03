@@ -1,6 +1,7 @@
 package day10;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Random;
 
 public class CardDemo {
@@ -17,6 +18,8 @@ public class CardDemo {
         }
         cards[i++] = new Card(Card.JOKER,Card.BLACK);
         cards[i++] = new Card(Card.JOKER,Card.COLOR);
+
+        //Collection.shuffle(list);
 
         Random r = new Random();
     for (i=cards.length-1;i<=1;i--){
