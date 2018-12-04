@@ -9,5 +9,6 @@ public class StaticString {
         System.out.println(s1==s3);//true
         String s4 = new String("abc");
         System.out.println(s1==s4);//false
+
     }
 }
