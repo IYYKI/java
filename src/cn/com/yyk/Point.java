@@ -7,7 +7,7 @@ public class Point {
     public Point(int x,int y){
         this.x=x;
         this.y=y;
-        Point o = new Point(0,1);
+        Point point = new Point(0,1);
     }
     public double distance (Point other){
         return Math.sqrt(x-other.x)*(x-other.x)
