@@ -29,8 +29,6 @@ public class Card {
     public static int SPADE=3;
     public static int JOKER=4;
 
-    public Card(){
-    }
     public Card(int suit,int rank){
         //this.rank = rank;
         //this.suit = suit;
