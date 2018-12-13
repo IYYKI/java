@@ -42,7 +42,7 @@ public class Card {
             {"方块","梅花","红桃","黑桃","大","小"};
 
     public String getRankNames(){
-ww        return RANK_NAMES[this.rank];
+         return RANK_NAMES[this.rank];
     }
     public String getSuitNames(){
         return SUIT_NAMES[this.suit];

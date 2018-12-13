@@ -7,20 +7,20 @@ import java.util.TreeSet;
 
 public class Poker {
     public static void main(String[] args) {
-HashMap<Integer, String> bcy = new HashMap<>();//存放扑克牌和它的索引
-ArrayList<Integer> list = new ArrayList<>();//存放扑克牌的索引
+    HashMap<Integer, String> bcy = new HashMap<>();//存放扑克牌和它的索引
+    ArrayList<Integer> list = new ArrayList<>();//存放扑克牌的索引
 //生成扑克牌，从小到大存入集合中，这里采取的花色大小是：梅花<方片<黑桃<红桃        
-String[] colors = {"♣","♦","♠","♥"};//花色数组
-String[] numbers = {"3","4","5","6","7","8","9","10","J","Q","K","A","2"};//大小数组
-int index = 0;//扑克牌的索引
+    String[] colors = {"♣","♦","♠","♥"};//花色数组
+    String[] numbers = {"3","4","5","6","7","8","9","10","J","Q","K","A","2"};//大小数组
+    int index = 0;//扑克牌的索引
 
 //将扑克牌存放进HashMap集合中
-for (int i = 0; i < numbers.length; i++) {
-for (int j = 0; j < colors.length; j++) {
-String puke = colors[j].concat(numbers[i]);
-bcy.put(index, puke);
-list.add(index);
-index++;
+    for (int i = 0; i < numbers.length; i++) {
+    for (int j = 0; j < colors.length; j++) {
+        String puke = colors[j].concat(numbers[i]);
+        bcy.put(index, puke);
+        list.add(index);
+        index++;
             }
 }
 bcy.put(index, "小王");
