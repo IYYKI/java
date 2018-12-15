@@ -19,7 +19,7 @@ public class Worm {
     /*** 当前方向*/
     private int dir = -1;
 
-    public Worm(){
+    public Worm(Node[] nodes, int left){
 
     }
     public Worm(Node [] nodes){
@@ -27,10 +27,6 @@ public class Worm {
         body.addAll(list);
         this.dir = dir;
     }
-
-    public Worm(Node nodes, int left) {
-    }
-
     /*** 走一步*/
     public void step(){
         Node head = body.get(0);
