@@ -1,7 +1,7 @@
 package shape;
 
 public class Shape {
-    public double area(){
+    public double Circle(){
         return 0;
     }
 
