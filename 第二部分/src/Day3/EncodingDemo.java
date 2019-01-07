@@ -19,6 +19,8 @@ public class EncodingDemo {
         byte [] buf = new byte[(int)file.length()];
         int size = raf.read(buf);
         printHex(buf);//将byte 数组安装 hex 进制的形式打印
+        String str = new String(buf,"gbk");
+        System.out.println(str);
         System.out.println("file size:"+size);
     }
     private static void printHex(byte[] buf) {
