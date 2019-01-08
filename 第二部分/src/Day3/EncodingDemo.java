@@ -25,8 +25,8 @@ public class EncodingDemo {
     }
     private static void printHex(byte[] buf) {
         for (byte b : buf) {
-            String hex = Integer.toHexString(b & 0xff);
-            System.out.print(hex + " ");
+            String hex = Integer.toHexString(b&0xff);
+            System.out.print(hex+ " ");
         }
         System.out.println();
     }
